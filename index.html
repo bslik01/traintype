@@ -5,11 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrainType</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="all">
+        <div class="elt">
+            <div class="">
+                <div class="loginCard">
+                    <h3 class="">Login</h3><!-- 𝕃𝕠𝕘 𝕚𝕟 -->
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <!-- <label for="emailLogin">Email</label> -->
+                            <input type="email" class="zone_t" id="emailLogin" placeholder="Email or username" required>
+                            <div class="erase">x</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="passwordLogin">Mot de passe</label> -->
+                            <input type="password" class="zone_t" id="passwordLogin" placeholder="Password" required>
+                            <a class="forget" href="#">Forget?</a>
+                        </div>
+                        <button type="submit" class="btn_s">Log in</button>
+                    </form>
+                    <div class="msg">
+                        <span>No account ? <a href="#" id="showSignUp">Sign Up</a></span>
+                    </div>
+                </div>
+                <div class="signUpCard" style="display: none;">
+                    <h3 class="text-center">Sign Up</h3>
+                    <form id="signUpForm">
+                        <div class="form-group">
+                            <!-- <label for="username"></label> -->
+                            <input type="text" class="zone_t" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="emailSignUp">Email</label> -->
+                            <input type="email" class="zone_t" id="emailSignUp" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="passwordSignUp">Mot de passe</label> -->
+                            <input type="password" class="zone_t" id="passwordSignUp" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn_su">Sign Up</button>
+                    </form>
+                    <div class="msg">
+                        <span>Already have an account ? <a href="#" id="showLogin">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="bande"></div>
+
+                <div class="terms">
+                    By signing in to <b>TrainType</b>, you agree to our <b>Terms</b> and <b>Privacy <br>Policy</b>.
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <script src="vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
