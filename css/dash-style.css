@@ -95,7 +95,7 @@ body {
   .last_group.active a {
     .img {
       border: 5px solid var(--primary-clr);
-      background-color: var(--white-bg);
+      /* background-color: var(--white-bg); */
       margin-left: -15px;
     }
   }
