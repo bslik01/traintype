@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Admin</title>
     <!-- <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/dash-style.css">
     <link rel="stylesheet" href="../vendor/bootstrap/icons/bootstrap-icons.min.css">
@@ -18,7 +18,7 @@
       <span class="sp_hide">Train Type</span>
     </div>
 
-    <ul class="link-items">
+    <ul id="add-exo" class="link-items">
       <li class="link-item active p_hd">
         <a href="#" class="link">
           <i class="bi bi-house-door"></i>
@@ -29,35 +29,35 @@
 
       <li class="link-item p_hd">
         <a href="#" class="link">
-          <i class="bi bi-pen"></i>
-          <span>s'exercer</span>
+          <i class="bi bi-database-add"></i>
+          <span>ajouter exercice</span>
         </a>
-        <span class="sp_hide">s'exercer</span>
+        <span class="sp_hide">ajouter exercice</span>
       </li>
 
-      <li class="link-item p_hd">
+      <li id="add-person" class="link-item p_hd">
         <a href="#" class="link">
-          <i class="bi bi-controller"></i>
-          <span>defis</span>
-        </a>
-        <span class="sp_hide">defis</span>
-      </li>
-
-      <li class="link-item p_hd">
-        <a href="#" class="link">
-          <i class="bi bi-view-list"></i>
-          <span>classement</span>
-        </a>
-        <span class="sp_hide">classement</span>
-      </li>
-
-      <li class="link-item p_hd">
-        <a href="#" class="link">
-          <i class="bi bi-graph-up-arrow"></i>
-          <span>historiques</span>
+          <i class="bi bi-person-add"></i>
+          <span>ajouter utilisateur</span>
           <span class="num-noti"></span>
         </a>
-        <span class="sp_hide">historiques</span>
+        <span class="sp_hide">ajouter utilisateur</span>
+      </li>
+
+      <li id="exo" class="link-item p_hd">
+        <a href="#" class="link">
+          <i class="bi bi-database"></i>
+          <span>exercices</span>
+        </a>
+        <span class="sp_hide">exercices</span>
+      </li>
+
+      <li id="person" class="link-item p_hd">
+        <a href="#" class="link">
+          <i class="bi bi-person"></i>
+          <span>utilisateurs</span>
+        </a>
+        <span class="sp_hide">utilisateurs</span>
       </li>
 
       <!-- <li class="link-item p_hd">
