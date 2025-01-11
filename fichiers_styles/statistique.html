@@ -1,0 +1,185 @@
+<html><head><base href="." /><title>Progression du Joueur - Vitesse de Frappe</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --bg: #ecf0f1;
+      }
+    
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: var(--bg);
+        color: var(--primary);
+      }
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      h1 {
+        text-align: center;
+        color: var(--primary);
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    
+      .stats-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+    
+      .stat-item {
+        text-align: center;
+      }
+    
+      .stat-value {
+        font-size: 2em;
+        color: var(--secondary);
+        font-weight: bold;
+      }
+    
+      .stat-label {
+        color: var(--primary);
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+    
+      .chart-container {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-top: 20px;
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    
+      .stats-card, .chart-container {
+        animation: fadeIn 0.5s ease forwards;
+      }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+      <h1>Progression du Joueur</h1>
+    
+      <div class="stats-card">
+        <div class="stat-item">
+          <div class="stat-value" id="averageWpm">0</div>
+          <div class="stat-label">Moyenne MPM</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="bestWpm">0</div>
+          <div class="stat-label">Record MPM</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="totalGames">0</div>
+          <div class="stat-label">Parties Jouées</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="progression">0%</div>
+          <div class="stat-label">Progression</div>
+        </div>
+      </div>
+    
+      <div class="chart-container">
+        <canvas id="progressChart"></canvas>
+      </div>
+    </div>
+    
+    <script>
+    const gameHistory = [
+      { date: '2024-01-01', wpm: 65 },
+      { date: '2024-01-02', wpm: 68 },
+      { date: '2024-01-03', wpm: 72 },
+      { date: '2024-01-04', wpm: 70 },
+      { date: '2024-01-05', wpm: 75 },
+      { date: '2024-01-06', wpm: 73 },
+      { date: '2024-01-07', wpm: 78 },
+      { date: '2024-01-08', wpm: 82 },
+      { date: '2024-01-09', wpm: 80 },
+      { date: '2024-01-10', wpm: 85 }
+    ];
+    
+    function updateStats() {
+      const wpmValues = gameHistory.map(game => game.wpm);
+      const averageWpm = Math.round(wpmValues.reduce((a, b) => a + b) / wpmValues.length);
+      const bestWpm = Math.max(...wpmValues);
+      const firstWpm = wpmValues[0];
+      const lastWpm = wpmValues[wpmValues.length - 1];
+      const progressionPercentage = Math.round(((lastWpm - firstWpm) / firstWpm) * 100);
+    
+      document.getElementById('averageWpm').textContent = averageWpm;
+      document.getElementById('bestWpm').textContent = bestWpm;
+      document.getElementById('totalGames').textContent = gameHistory.length;
+      document.getElementById('progression').textContent = `+${progressionPercentage}%`;
+    }
+    
+    function createChart() {
+      const ctx = document.getElementById('progressChart').getContext('2d');
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: gameHistory.map(game => game.date),
+          datasets: [{
+            label: 'Mots par Minute',
+            data: gameHistory.map(game => game.wpm),
+            borderColor: '#3498db',
+            backgroundColor: 'rgba(52, 152, 219, 0.1)',
+            fill: true,
+            tension: 0.4,
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: 'Évolution de la Vitesse de Frappe'
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: false,
+              title: {
+                display: true,
+                text: 'Mots par Minute (MPM)'
+              }
+            },
+            x: {
+              title: {
+                display: true,
+                text: 'Date'
+              }
+            }
+          }
+        }
+      });
+    }
+    
+    // Initialisation
+    updateStats();
+    createChart();
+    </script>
+    </body></html>
