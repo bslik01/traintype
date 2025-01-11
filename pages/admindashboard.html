@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css"> -->
+    
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css"> -->
+</head>
+<body>
+    <div class="container-fluid col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <h3 class="mt-4 mb-4">Admin Dashboard</h3>
+        <div class="rounded border p-5">
+            <h4>Add New Exercise</h4>
+            <form>
+
+            </form>
+                <div class="mt-4 mb-4">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title"/>
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Content</label>
+                    <textarea class="form-control" id="content" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="difficulty" class="form-label">Difficulty</label>
+                    <select class="form-select" id="difficulty">
+                        <option selected>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Time limit(seconds)</label>
+                    <input type="text" class="form-control" id="time"/>
+                </div>
+                <button type="submit" class="btn btn-dark mb-4">Add Exercise</button>
+            </div>
+           
+        </div>
+
+
+    </div>
+</body>

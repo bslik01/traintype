@@ -3,82 +3,102 @@
         "niveau": "Debutant",
         "exo": [
             {
+                "titre":"Une journée ensoleillée",
                 "texte": "Le soleil brille dans le ciel bleu. Les oiseaux chantent dans les arbres. Emma a un nouveau vélo. Ce matin, elle décide de faire une promenade.Elle met son casque et sort dans le parc. Elle roulle doucement sur les chemins. Le vent souffle dans ses cheveux. Emma sourit; elle aime son vélo rouge.",
                 "temps": 106
             },
             {
+                "titre":"La cigale et la fourmi",
                 "texte": "En été, la cigale chantait sous le soleil. L'hiver venu, elle n'avait plus rien à manger. Elle alla donc voir la fourmi et lui demanda un peu de nourriture. Mais la fourmi, prudente, lui répondit qu'il fallait penser à l'avenir et travailler avant qu'il ne soit trop tard.",
                 "temps": 96
             },
             {
+                "titre":"Madame Bovary",
                 "texte": "Emma Bovary rêvait de grandes aventures et d'une vie pleine de passion. Pourtant, elle vivait dans un petit village, où les jours se ressemblaient tous. Son mari, Charles, était un homme simple et attentionné, mais Emma cherchait autre chose. Elle passait des heures à lire des romans, espérant y trouver l'évasion qu'elle ne pouvait avoir dans la réalité.",
                 "temps": 116
             },
             {
+                "titre":"Le rouge et le noir",
                 "texte": "Julien Sorel était un jeune homme ambitieux et intélligent. Né dans une famille modeste, il rêvait de gravir les échelons de la société. Il passait des heures à lre des livres, apprenant le latin et étudiant les grands personnages de l'histoire. Lorsqu'il fut engagé comme précepteur dans une famille riche, il vit là une opportunité de changer son destin. Mais sa quête de pouvoir et son coeur passioné allaient bientôt se heurter aux réalités cruelles de son époque.",
                 "temps": 156
             },
             {
+                "titre":"Vingt mille lieues sous les mers",
                 "texte": "Le Nautilus avançait silencieusement sous les eaux profondes. À travers les immenses hublots du sous-marin, le professeur Aronnax observait des créatures marines qu’il n’avait jamais vues auparavant. Des méduses lumineuses flottaient doucement, tandis que des bancs de poissons colorés passaient à toute vitesse. Le capitaine Nemo, mystérieux et taciturne, restait debout près du gouvernail, fixant l’horizon invisible. Chaque jour apportait son lot de découvertes, mais aussi de mystères qui troublaient l’équipage.",
                 "temps": 142
             },
             {
+                "titre":"Le livre de la jungle",
                 "texte": "Mowgli, le petit garçon élevé par des loups, aimait courir à travers la jungle. Ses amis Baloo, l’ours sage, et Bagheera, la panthère noire, lui apprenaient les lois de la jungle. Chaque jour était une nouvelle aventure : il grimpait aux arbres, nageait dans les rivières et jouait avec les singes. Mais la jungle n’était pas sans danger. Shere Khan, le tigre féroce, rôdait toujours dans l’ombre, cherchant à s’attaquer au jeune garçon.",
                 "temps": 146
             },
             {
+                "titre":"Le tour du mone en quatre-vingt jours",
                 "texte": "Phileas Fogg était un homme très ponctuel. Chaque matin, il suivait la même routine : il se levait à huit heures, prenait son thé, puis lisait le journal. Un jour, il fit un pari avec ses amis. Il affirma qu’il pouvait faire le tour du monde en seulement 80 jours.",
                 "temps": 100
             },
             {
+                "titre":"Au bord de la mer",
                 "texte": "L’année dernière, j’ai visité une petite ville au bord de la mer. Les rues étaient pavées et bordées de maisons colorées. Chaque matin, je prenais mon café sur une terrasse avec vue sur l’océan. J’ai aussi goûté des plats locaux délicieux, comme des fruits de mer fraîchement pêchés. Mais ce qui m’a le plus marqué, c’était les couchers de soleil, où le ciel devenait un mélange de rose, d’orange et de violet.",
                 "temps": 144
             },
             {
+                "titre":"Luna la chatte pas très sage",
                 "texte": "Luna, la petite chatte grise, était très curieuse. Un jour, elle a décidé d’explorer le grenier de la maison. Elle a sauté sur une vieille chaise, puis sur une étagère poussiéreuse. Là, elle a découvert une boîte en carton pleine de photos anciennes. Fascinée, elle a commencé à jouer avec une des photos, la faisant tomber au sol. Luna aimait ses petites aventures, même si cela signifiait souvent qu’elle se faisait gronder par ses maîtres !",
                 "temps": 150
             },
             {
+                "titre":"Oliver Twist",
                 "texte": "Oliver Twist était un orphelin qui grandit dans des conditions misérables. Après avoir osé demander « encore un peu de soupe », il fut envoyé travailler pour un croque-mort. Mais Oliver ne supportait plus cette vie. Un jour, il s’enfuit à Londres, où il fut recueilli par un groupe de voleurs dirigé par le sinistre Fagin. Malgré les difficultés et les dangers, Oliver espérait toujours trouver un endroit où il pourrait être heureux et en sécurité.",
                 "temps":152
             },
             {
+                "titre":"Heidi",
                 "texte": "Heidi, une jeune fille pleine de vie, fut envoyée vivre chez son grand-père dans les montagnes des Alpes. Bien que son grand-père fût un homme rude et solitaire, Heidi apprit à l’aimer et à admirer la beauté de la nature qui l’entourait. Elle passait ses journées à courir dans les prairies, à jouer avec les chèvres, et à profiter de l’air frais. Mais un jour, Heidi fut envoyée vivre en ville, loin de ses montagnes bien-aimées. Elle rêvait de retourner chez elle, où elle se sentait vraiment heureuse.",
                 "temps":176
             },
             {
+                "titre":"Les aventures de Robinson Crusoé",
                 "texte": "Après un naufrage, Robinson Crusoé se retrouva seul sur une île déserte. Au début, il fut désespéré. Mais rapidement, il comprit qu’il devait s’organiser pour survivre. Il construisit une cabane, chassa des animaux pour se nourrir, et apprit à cultiver la terre. Les jours passaient, puis les mois, et enfin les années. Robinson se demandait s’il reverrait un jour un autre être humain. Un jour, il aperçut des empreintes sur le sable, et sa vie changea à jamais.",
                 "temps":156
             },
             {
+                "titre":"Les contes de Mille et une nuits",
                 "texte": "Shéhérazade était une jeune femme dotée d’une grande intelligence et d’un talent pour raconter des histoires. Chaque nuit, elle captivait le roi en lui narrant des contes merveilleux, pleins de magie et de mystères. Elle parlait de génies enfermés dans des lampes, de trésors cachés dans des cavernes et de voyages sur des tapis volants. Chaque matin, elle s’arrêtait au moment le plus palpitant, obligeant le roi à attendre la suite. Ainsi, elle parvint à repousser son exécution nuit après nuit.",
                 "temps":162
             },
             {
+                "titre":"Le comte de Monte-Cristo",
                 "texte": "Edmond Dantès était un marin jeune et ambitieux, prêt à se marier avec la femme qu’il aimait. Mais des ennemis jaloux complotèrent pour l’envoyer en prison pour un crime qu’il n’avait pas commis. Enfermé dans la forteresse du Château d’If, il perdit tout espoir. Cependant, un vieux prisonnier lui révéla un secret : un trésor caché sur l’île de Monte-Cristo. Après des années de captivité, Edmond s’évada et devint un homme riche et puissant, prêt à se venger de ceux qui l’avaient trahi.",
                 "temps":166
             },
             {
+                "titre":"Le comte Dracula",
                 "texte": "Jonathan Harker voyagea en Transylvanie pour rencontrer un mystérieux client, le comte Dracula. Dès son arrivée, il fut frappé par l’atmosphère étrange et sinistre du château. Peu à peu, Jonathan découvrit que Dracula n’était pas un simple homme, mais une créature terrifiante qui se nourrissait de sang humain. Pendant ce temps, à Londres, des événements inquiétants commencèrent à se produire. Lucy, une amie de la fiancée de Jonathan, tomba gravement malade, et personne ne comprenait pourquoi. La bataille contre Dracula ne faisait que commencer.",
                 "temps":168
             },
             {
+                "titre":"Le fantôme de l'opéra",
                 "texte": "L’Opéra de Paris était un lieu magique où les plus grands chanteurs se produisaient. Mais il était aussi hanté par un mystérieux fantôme. Ce dernier vivait dans les sous-sols et exigeait que certaines règles soient respectées. Christine, une jeune chanteuse, attira l’attention du fantôme. Il lui enseigna les secrets du chant et l’encouragea à devenir une grande artiste. Cependant, son amour pour Christine devint obsessionnel, et il était prêt à tout pour qu’elle reste à ses côtés, quitte à semer la terreur.",
                 "temps":164
             },
             {
+                "titre":"Buck!",
                 "texte": "Buck, un chien puissant, vivait paisiblement dans une grande maison en Californie. Mais un jour, il fut capturé et vendu pour travailler comme chien de traîneau dans le grand nord canadien. Là-bas, il découvrit un monde rude et impitoyable. Chaque jour, il luttait contre le froid, la faim et les dangers de la forêt sauvage. Peu à peu, Buck sentit l’appel de la nature en lui. Il apprenait à survivre, à se battre, et à écouter son instinct, jusqu’à devenir le chef de la meute.",
                 "temps":170
             },
             {
+                "titre":"Promenade sur la plage",
                 "texte":"Le bruit des vagues était apaisant. Claire se promenait sur la plage, ramassant des coquillages. « Regarde celui-ci, » dit-elle en montrant un coquillage en spirale à son fils. Il le prit et s’exclama : « On dirait un trésor ! » Claire sourit. « Chaque coquillage a une histoire à raconter. » Alors qu’ils continuaient leur promenade, ils trouvèrent une bouteille en verre contenant un message. « Un message dans une bouteille ? C’est comme dans les histoires ! » dit le garçon. Claire ouvrit la bouteille avec précaution.",
                 "temps":155
             },
             {
+                "titre":"Les travailleurs de la mer",
                 "texte":"La tempête faisait rage, et le bateau tanguait violemment. « Tout le monde reste calme ! » cria le capitaine. Les marins s’accrochaient aux cordages, leurs visages marqués par la peur. Soudain, un éclair illumina l’horizon, révélant une île. « Une terre ! » s’écria quelqu’un. Le capitaine ajusta sa lunette. « Préparez-vous à accoster là-bas, » ordonna-t-il. Le bateau avançait difficilement, mais l’équipage gardait espoir. En atteignant la plage, ils découvrirent une jungle dense et mystérieuse, pleine de bruits étranges.",
                 "temps":151
             },
             {
+                "titre":"La gare abandonnée",
                 "texte":"Dans la vieille gare abandonnée, le silence régnait en maître. Luc avançait prudemment, sa lampe torche à la main. Les murs étaient couverts de graffitis colorés, et des morceaux de verre brisé jonchaient le sol. Une horloge cassée indiquait toujours 15h42. « Que s’est-il passé ici ? » se demanda-t-il. Soudain, un bruit de pas retentit derrière lui. Il se retourna vivement, mais il n’y avait personne. Pourtant, l’impression d’être observé ne le quittait pas.",
                 "temps":150
             }
@@ -89,62 +109,77 @@
         "niveau":"Intermédiaire",
         "exo":[
             {
+                "titre":"La vue",
                 "texte":"« Arrête-toi ici, regarde cette vue incroyable ! » s’exclama Clara en pointant l’horizon. Paul ralentit la voiture et se gara au bord de la route. Devant eux, une vallée verdoyante s’étendait à perte de vue. Les oiseaux volaient bas, traçant des arcs dans le ciel clair. Clara sortit un carnet et un crayon. « Tu fais quoi ? » demanda Paul, intrigué. « Je veux dessiner ce moment, » répondit-elle en souriant. Pendant qu’elle esquissait, Paul prit une photo avec son téléphone. « Un souvenir à partager ! » dit-il.",
                 "temps":78
             },
             {
+                "titre":"La maison sur la colline",
                 "texte":"Dans la vieille maison, Émile poussa une porte fermée depuis des années. Une odeur de renfermé emplit l’air. Sur une table en bois, il trouva une horloge cassée et un journal poussiéreux. « Que raconte ce vieux carnet ? » murmura-t-il en l’ouvrant. Les pages jaunies étaient remplies de notes manuscrites et de croquis étranges. Une phrase attira son attention : « La clé est sous le tapis du salon. » Émile courut vérifier. Sous le tapis, il trouva une petite boîte en métal fermée par un cadenas. « Et maintenant, où est la clé du cadenas ? »",
                 "temps":81
             },
             {
+                "titre":"La boutique de souvenirs",
                 "texte":"« Entrez, » dit une voix rauque derrière la porte. Léa hésita, mais elle poussa la porte et entra dans la petite boutique. À l’intérieur, des étagères chargées d’objets anciens craquaient sous leur poids. Une horloge murale battait un rythme irrégulier. « Je cherche un cadeau unique, » dit Léa. Le vieil homme derrière le comptoir sourit : « Vous êtes au bon endroit. Regardez ça. » Il sortit une bague incrustée d’un étrange cristal violet. « Elle est parfaite, » murmura Léa. Alors qu’elle tendait la main, un frisson la traversa. Était-ce juste une coïncidence ?",
                 "temps":76
             },
             {
-                "texte":"Un éclat lumineux attira l’attention de Max dans le champ enneigé. Il s’approcha et trouva un médaillon en argent, gravé avec une date : « 12/07/1945 ». « D’où ça vient ? » murmura-t-il. En l’ouvrant, il découvrit une vieille photo : un jeune couple souriant. Max montra l’objet à sa grand-mère. Ses yeux s’embuèrent. « C’était à ton grand-père. Il l’a perdu pendant la guerre. » Max serra le médaillon. « Je vais le faire restaurer, » dit-il. Sa grand-mère sourit faiblement, reconnaissante.",
+                "titre":"Le medaillon perdu",
+                "texte":"Un éclat lumineux attira l’attention de Max dans le champ enneigé. Il s’approcha et trouva un médaillon en argent, gravé avec une date : « 12-07-1945 ». « D’où ça vient ? » murmura-t-il. En l’ouvrant, il découvrit une vieille photo : un jeune couple souriant. Max montra l’objet à sa grand-mère. Ses yeux s’embuèrent. « C’était à ton grand-père. Il l’a perdu pendant la guerre. » Max serra le médaillon. « Je vais le faire restaurer, » dit-il. Sa grand-mère sourit faiblement, reconnaissante.",
                 "temps":76
             },
             {
+                "titre":"Le parchemin",
                 "texte":"« Écoutez bien, » dit le professeur en ajustant ses lunettes. « Ce texte ancien contient des énigmes. » Les élèves se penchèrent sur le parchemin, fasciné·es. Les mots gravés semblaient briller faiblement. « Que veut dire ce symbole étrange ? » demanda Marc. Le professeur expliqua : « Il représente l’éternité. » Pendant qu’il parlait, Lucie remarqua un détail : une lettre était surlignée dans chaque ligne. « Regardez, ça forme un mot ! » dit-elle. Le groupe déchiffra le message : « Suivez la lumière. » Intrigué·es, ils cherchèrent ce que cela signifiait.",
                 "temps":78
             },
             {
+                "titre":"Madame Bovary",
                 "texte":"Emma Bovary rêvait de grandes aventures et d'une vie pleine de passion. Pourtant, elle vivait dans un petit village, où les jours se ressemblaient tous. Son mari, Charles, était un homme simple et attentionné, mais Emma cherchait autre chose. Elle passait des heures à lire des romans, espérant y trouver l'évasion qu'elle ne pouvait avoir dans la réalité.",
                 "temps":100
             },
             {
+                "titre":"Les travailleurs de la mer",
                 "texte":"La tempête faisait rage, et le bateau tanguait violemment. « Tout le monde reste calme ! » cria le capitaine. Les marins s’accrochaient aux cordages, leurs visages marqués par la peur. Soudain, un éclair illumina l’horizon, révélant une île. « Une terre ! » s’écria quelqu’un. Le capitaine ajusta sa lunette. « Préparez-vous à accoster là-bas, » ordonna-t-il. Le bateau avançait difficilement, mais l’équipage gardait espoir. En atteignant la plage, ils découvrirent une jungle dense et mystérieuse, pleine de bruits étranges.",
                 "temps":130
             },
             {
+                "titre":"La mystérieuse clé",
                 "texte":"« Monsieur, vous avez laissé tomber ceci », dit l’enfant en tendant une clé ornée d’un étrange symbole.L’homme parut surpris : « Mais… d’où vient-elle ? »Le garçon haussa les épaules. « Je l’ai trouvée juste là, au pied de cet arbre. »",
                 "temps":90
             },
             {
+                "titre":"Le cri de la forêt",
                 "texte":"Une promenade dans la forêt au crépuscule révèle des merveilles souvent ignorées. Les rayons du soleil couchant passent à travers les arbres, créant des jeux d’ombre et de lumière. Le parfum de la terre humide emplit l’air frais.Le concert débuta dans une salle comble. Les premières notes de musique résonnèrent, captivant immédiatement le public. Chaque instrument semblait raconter une histoire, et les spectateurs étaient transportés dans un autre univers.",
                 "temps":145
             },
             {
+                "titre":"Une journée au parc",
                 "texte":"Les enfants jouaient dans le parc, riant et courant après un ballon rouge. Le ciel était d’un bleu éclatant, et les parents discutaient sur les bancs, surveillant les petits. L’ambiance était joyeuse, comme un instant suspendu dans le temps.",
                 "temps":110
             },
             {
+                "titre":"La tempête",
                 "texte":"Le panneau indiquait : « Attention, danger ! » mais personne ne semblait y prêter attention. La pluie tombait drue, les éclairs déchiraient le ciel, et le bruit des gouttes s’écrasait sur les vitres avec une régularité hypnotique.Assis au bord du lac, il écoutait les bruits apaisants de la nature. Les feuilles des arbres bruissaient doucement, et l’eau scintillait sous les rayons du soleil. Ce moment simple lui apportait une paix profonde.",
                 "temps":98
             },
             {
+                "titre":"La tête dans les nuages",
                 "texte":"Il chercha désespérément son téléphone. « Où est-ce que j’ai pu le mettre ? » pensa-t-il. Son bureau était un chaos indescriptible : papiers froissés, stylos éparpillés, et une tasse de café à moitié vide.Dans la pièce régnait un désordre complet : livres ouverts, vêtements sur le sol et une chaise renversée.",
                 "temps":80
             },
             {
+                "titre":"Le fantôme de l'opéra",
                 "texte":"L’Opéra de Paris était un lieu magique où les plus grands chanteurs se produisaient. Mais il était aussi hanté par un mystérieux fantôme. Ce dernier vivait dans les sous-sols et exigeait que certaines règles soient respectées. Christine, une jeune chanteuse, attira l’attention du fantôme. Il lui enseigna les secrets du chant et l’encouragea à devenir une grande artiste. Cependant, son amour pour Christine devint obsessionnel, et il était prêt à tout pour qu’elle reste à ses côtés, quitte à semer la terreur.",
                 "temps":140
             },
             {
+                "titre":"La bibliothèque de minuit",
                 "texte":"La bibliothèque était immense, avec des étagères allant jusqu’au plafond. L’odeur des livres anciens emplissait l’air, et un silence presque sacré régnait. On pouvait passer des heures ici, perdu dans un monde de connaissances et d’histoires.",
                 "temps":78
             },
             {
+                "titre":"Un café?",
                 "texte":"« Voilà votre café, avec un supplément de chantilly », annonça le serveur. Il posa délicatement la tasse sur la table. La mousse formait un cœur parfait, et la cliente sourit en murmurant : « Merci, c’est exactement ce qu’il me fallait. »",
                 "temps":90
             }
@@ -156,50 +191,62 @@
         "niveau":"Avancé",
         "exo":[
             {
+                "titre":"La boutique de souvenirs",
                 "texte":"Entrez, » dit une voix rauque derrière la porte. Léa hésita, mais elle poussa la porte et entra dans la petite boutique. À l’intérieur, des étagères chargées d’objets anciens craquaient sous leur poids. Une horloge murale battait un rythme irrégulier. « Je cherche un cadeau unique, » dit Léa. Le vieil homme derrière le comptoir sourit : « Vous êtes au bon endroit. Regardez ça. » Il sortit une bague incrustée d’un étrange cristal violet. « Elle est parfaite, » murmura Léa. Alors qu’elle tendait la main, un frisson la traversa. Était-ce juste une coïncidence ?",
                 "temps":60
             },
             {
+                "titre":"Les contes de Mille et une nuits",
                 "texte":"Shéhérazade était une jeune femme dotée d’une grande intelligence et d’un talent pour raconter des histoires. Chaque nuit, elle captivait le roi en lui narrant des contes merveilleux, pleins de magie et de mystères. Elle parlait de génies enfermés dans des lampes, de trésors cachés dans des cavernes et de voyages sur des tapis volants. Chaque matin, elle s’arrêtait au moment le plus palpitant, obligeant le roi à attendre la suite. Ainsi, elle parvint à repousser son exécution nuit après nuit.",
                 "temps":130
             },
             {
+                "titre":"La maison sur la colline",
                 "texte":"Dans la vieille maison, Émile poussa une porte fermée depuis des années. Une odeur de renfermé emplit l’air. Sur une table en bois, il trouva une horloge cassée et un journal poussiéreux. « Que raconte ce vieux carnet ? » murmura-t-il en l’ouvrant. Les pages jaunies étaient remplies de notes manuscrites et de croquis étranges. Une phrase attira son attention : « La clé est sous le tapis du salon. » Émile courut vérifier. Sous le tapis, il trouva une petite boîte en métal fermée par un cadenas. « Et maintenant, où est la clé du cadenas ? »",
                 "temps":63
             },
             {
+                "titre":"Le parchemin",
                 "texte":"« Écoutez bien, » dit le professeur en ajustant ses lunettes. « Ce texte ancien contient des énigmes. » Les élèves se penchèrent sur le parchemin, fasciné·es. Les mots gravés semblaient briller faiblement. « Que veut dire ce symbole étrange ? » demanda Marc. Le professeur expliqua : « Il représente l’éternité. » Pendant qu’il parlait, Lucie remarqua un détail : une lettre était surlignée dans chaque ligne. « Regardez, ça forme un mot ! » dit-elle. Le groupe déchiffra le message : « Suivez la lumière. » Intrigué·es, ils cherchèrent ce que cela signifiait.",
                 "temps":65
             },
             {
+                "titre":"Le medaillon perdu",
                 "texte":"Un éclat lumineux attira l’attention de Max dans le champ enneigé. Il s’approcha et trouva un médaillon en argent, gravé avec une date : « 12/07/1945 ». « D’où ça vient ? » murmura-t-il. En l’ouvrant, il découvrit une vieille photo : un jeune couple souriant. Max montra l’objet à sa grand-mère. Ses yeux s’embuèrent. « C’était à ton grand-père. Il l’a perdu pendant la guerre. » Max serra le médaillon. « Je vais le faire restaurer, » dit-il. Sa grand-mère sourit faiblement, reconnaissante.",
                 "temps":70
             },
             {
+                "titre":"Les travailleurs de la mer",
                 "texte":"La tempête faisait rage, et le bateau tanguait violemment. « Tout le monde reste calme ! » cria le capitaine. Les marins s’accrochaient aux cordages, leurs visages marqués par la peur. Soudain, un éclair illumina l’horizon, révélant une île. « Une terre ! » s’écria quelqu’un. Le capitaine ajusta sa lunette. « Préparez-vous à accoster là-bas, » ordonna-t-il. Le bateau avançait difficilement, mais l’équipage gardait espoir. En atteignant la plage, ils découvrirent une jungle dense et mystérieuse, pleine de bruits étranges.",
                 "temps":110
             },
             {
+                "titre":"La mystérieuse clé",
                 "texte":"« Monsieur, vous avez laissé tomber ceci », dit l’enfant en tendant une clé ornée d’un étrange symbole.L’homme parut surpris : « Mais… d’où vient-elle ? »Le garçon haussa les épaules. « Je l’ai trouvée juste là, au pied de cet arbre. »",
                 "temps":85
             },
             {
+                "titre":"Trouve moi",
                 "texte":"Dans la pièce régnait un désordre complet : livres ouverts, vêtements sur le sol et une chaise renversée. Sur le miroir, un message en lettres rouges : « Trouve-moi avant qu’il ne soit trop tard. » Chaque détail semblait raconter une histoire oubliée.",
                 "temps":80
             },
             {
+                "titre":"Un café?",
                 "texte":"« Voilà votre café, avec un supplément de chantilly », annonça le serveur. Il posa délicatement la tasse sur la table. La mousse formait un cœur parfait, et la cliente sourit en murmurant : « Merci, c’est exactement ce qu’il me fallait. »",
                 "temps":89
             },
             {
+                "titre":"La tempête",
                 "texte":"Le panneau indiquait : « Attention, danger ! » mais personne ne semblait y prêter attention. La pluie tombait drue, les éclairs déchiraient le ciel, et le bruit des gouttes s’écrasait sur les vitres avec une régularité hypnotique.Assis au bord du lac, il écoutait les bruits apaisants de la nature. Les feuilles des arbres bruissaient doucement, et l’eau scintillait sous les rayons du soleil. Ce moment simple lui apportait une paix profonde.",
                 "temps":100
             },
             {
+                "titre":"Erreur 404",
                 "texte":"Un écran s’alluma soudain avec le message : Erreur 404 - Page introuvable. Le développeur soupira en voyant cette alerte. « Encore un bug ! » s’exclama-t-il. Il ouvrit rapidement une ligne de commande et tapa : sudo reboot system.",
                 "temps":65
             },
             {
+                "titre":"Le comte de Monte-Cristo",
                 "texte":"Edmond Dantès était un marin jeune et ambitieux, prêt à se marier avec la femme qu’il aimait. Mais des ennemis jaloux complotèrent pour l’envoyer en prison pour un crime qu’il n’avait pas commis. Enfermé dans la forteresse du Château d’If, il perdit tout espoir. Cependant, un vieux prisonnier lui révéla un secret : un trésor caché sur l’île de Monte-Cristo. Après des années de captivité, Edmond s’évada et devint un homme riche et puissant, prêt à se venger de ceux qui l’avaient trahi.",
                 "temps":130
             }
