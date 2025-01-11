@@ -16,7 +16,24 @@ id1.addEventListener("click", function(){
 //   const tittle_text=document.createTextNode("BIENVENUE DANS L'ACCUEIL");
 //   tittle.appendChild(tittle_text);
 //   global.appendChild(tittle);
-global.innerHTML = `<h1>BIENVENUE DANS L'ACCUEIL</h1>`;
+global.innerHTML = `<h1>BIENVENUE DANS L'ACCUEIL</h1>
+<header>
+    <h1 class="t">Train Type</h1> 
+    </header>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/image3.jpg" class="d-block w-100" alt="..."
+            height="400px;
+            width=500px;>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/image1.jpg" class="d-block w-100" alt="..."
+            height=400px
+            width=500px >
+          </div>
+        </div>
+      </div>`;
 global.className +=' '+'mef';
 });
 //interface section s'exercer
@@ -31,12 +48,6 @@ id2.addEventListener("click", function(){
             <h3 class="titre-exo">Exercice Predefini</h3>
             <p class="description-exo">Entrainez vous avec des exercices selectionnés avec soin pour vous.</p>
         </div>
-        <div class="action-exo">
-            <div id="exopred" class="btn-exo">
-                <i class="bi bi-arrow-right"></i>
-            </div>
-            
-        </div>
     </div>
        
     <div class="exo">
@@ -47,11 +58,6 @@ id2.addEventListener("click", function(){
             <h3 class="titre-exo">Exercice Personnalisé</h3>
             <p class="description-exo">Choisissez vos propres textes pour vous entrainer.</p>
                 
-        </div>
-        <div class="action-exo">
-            <div class="btn-exo">
-                <i class="bi bi-arrow-right"></i>
-            </div>
         </div>
        
     </div>

@@ -1,4 +1,4 @@
-.mef{
+   .mef{
  text-align: center;
  text-decoration: underline;
 }
@@ -115,9 +115,13 @@
 .aide{
     margin-top: 60px;
     height: 200px;
-    width: 800px;
+    width: 930px;
     border-radius: 20px;
     border-color: black;
     background-color: gray;
     text-align: left;
+}
+.carousel-inner{
+    margin-top: 70px;
+    display: inline-flex;
 }
