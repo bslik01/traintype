@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const user = {
             username: document.getElementById('username').value,
+            firstname: document.getElementById('firstname').value,
             email: document.getElementById('emailSignUp').value,
             password: document.getElementById('passwordSignUp').value
         };
