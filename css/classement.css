@@ -1,0 +1,88 @@
+:root {
+        --primary: #2c3e50;
+        --secondary: #09568e68;
+        --bg: #ecf0f1;
+      }
+    
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: var(--primary);
+      }
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      h1 {
+        text-align: center;
+        color: var(--primary);
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    
+      .leaderboard {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        overflow: hidden;
+      }
+    
+      .header {
+        background: var(--secondary);
+        color: rgb(200, 226, 240);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        font-weight: bold;
+      }
+    
+      .player-row {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        transition: transform 0.2s ease;
+      }
+    
+      .player-row:hover {
+        background: #c3ecf9;
+        transform: scale(1.01);
+      }
+    
+      .rank {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+    
+      .medal {
+        width: 25px;
+        height: 25px;
+      }
+    
+      .search-box {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 12px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        font-size: 16px;
+      }
+    
+      .wpm {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    
+      .player-row {
+        animation: fadeIn 0.5s ease forwards;
+      }
