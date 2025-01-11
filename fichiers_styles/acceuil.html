@@ -1,119 +1,84 @@
-<html><head><base href="." /><title>Mon Site Web</title><meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css"  />
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-      .hero-section {
-        background-color: rgb(86, 86, 86);
-        color: rgb(10, 7, 7);
-        padding: 100px 0;
-        margin-bottom: 50px;
-       
-      }
-      
-      .auth-form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      }
-    
-      .form-switch {
-        text-align: center;
-        margin: 15px 0;
-      }
-    
-      .features {
-        padding: 50px 0;
-        margin-top: 2%;
-        align-content: center;
-      }
-    
-      .feature-icon {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
-        color:  rgb(86, 86, 86);
-      }
-     .writing-block{
-     background:rgb(164, 164, 164);
-      height: 110%;
-      width: 70%;
-     margin-left: 20%;
-     border-radius: 3%;
-     
-     
-     align-content: center;
-     }
-    
+        .container { max-width: 1200px; width: 100%; padding: 0 20px; }
+        .hero-section { background-color: rgb(218, 234, 247); color: rgb(7, 7, 7); padding: 50px 0; margin-bottom: 50px;; }
+        .features { padding: 50px 0; margin-top: 2%; align-content: center; }
+        .feature-icon { font-size: 3.5rem; margin-bottom: 20px; color: rgb(189, 214, 235); }
+        .writing-block { background: rgb(255, 255, 255);
+           height: 100%;
+            width: 60%;            
+            margin: 10px auto;
+             border-radius: 10px;
+              padding: 20px;
+               text-align: center; 
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out; }
+        .writing-block1 { background: rgb(255, 255, 255); height: 100%; width: 60%; margin: 10px auto; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;margin-left: 40%; }
+        .writing-block2 { background: rgb(255, 255, 255); height: 100%; width: 60%; margin: 10px auto; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;margin-left: -3%; }
+        .writing-block:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+        .writing-block1:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+        .writing-block2:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
     </style>
-    </head>
-    <body class="bg-dark">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" >
-          <i class="fas fa-cube"></i> TRAIN TYPE
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <button class="btn btn-dark">Connexion</button>
-            </li>
-            
-            <li class="nav-item" style="margin-left: 5%;" >
-              <button class="btn btn-light">inscription</button>
-            </li>
-          </ul>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" style="color: black;"><b>TRAIN TYPE</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-dark">Connexion</button>
+                    </li>
+                    <li class="nav-item" style="margin-left: 15%;">
+                        <button class="btn btn-light">Inscription</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    
     <section class="hero-section text-center">
-      <div class="container">
-        <h1 > AMELOIRER VOS COMPETENCES EN SAISIE </h1>
-        <p class="lead"><b>Découvrez une nouvelle façon d'apprendre a saisir</b></p>
-        <p style="margin-top: 1%;"><button class="btn btn-dark"> COMMENCER</button></p>
-      </div>
-      <section class="features">
-        <div class="row text-center " style="align-content: center;">
-          <div class="col-md-4">
-            <section class="writing-block">
-            <i class="fas fa-keyboard feature-icon"></i>
-            <h3>Rapide</h3>
-            
-            <p>Notre site va vous permettre d'ameiorer votre vitesse 
-             de saisie de maniere exponentielle</p>
-        </section>
-          </div>
-        
-          <div class="col-md-4">
-            <section class="writing-block ">
-            <i class="fas fa-graduation-cap feature-icon"></i>
-            <h3>Apprentissage</h3>
-            
-            <p>Grace a son interface ludique l'apprentissage 
-            n'aura jamais ete aussi fun</p>
-        </section>
-          </div>
-        
-          <div class="col-md-4">
-            <section class="writing-block">
-            <i class="fas fa-sync feature-icon"></i>
-            <h3>Flexible</h3>
-            
-            <p>Notre site s'adapte a vous ete a vos besions grace 
-            aux nomres outils mis a votre disposition</p>
-        </section>
-          </div>
-        
+        <div class="container">
+          <br>
+            <h1>AMÉLIORER VOS COMPÉTENCES EN SAISIE</h1>
+  
+            <p class="lead"><strong>Découvrez une nouvelle façon d'apprendre à saisir</strong></p>
+            <button class="btn btn-dark" style="margin-top: 1%;">COMMENCER</button>
         </div>
-      </section>
-    </div>
+        <section class="features">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <section class="writing-block1">
+                        <i class="fas fa-keyboard feature-icon"></i>
+                        <h3>Rapide</h3>
+                        <p>Notre site va vous permettre d'améliorer votre vitesse de saisie de manière exponentielle</p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="writing-block">
+                        <i class="fas fa-graduation-cap feature-icon"></i>
+                        <h3>Apprentissage</h3>
+                        <p>Grâce à son interface ludique, l'apprentissage n'aura jamais été aussi amusant</p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="writing-block2">
+                        <i class="fas fa-sync feature-icon"></i>
+                        <h3>Flexible</h3>
+                        <p>Notre site s'adapte à vous et à vos besoins grâce aux nombreux outils mis à votre disposition</p>
+                    </section>
+                </div>
+            </div>
+        </section>
     </section>
-    
-    </body></html>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
