@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .container { max-width: 1200px; width: 100%; padding: 0 20px; }
-        .hero-section { background-color: rgb(218, 234, 247); color: rgb(7, 7, 7); padding: 50px 0; margin-bottom: 50px;; }
+        .hero-section { background-color: rgb(218, 234, 247); color: rgb(7, 7, 7); padding: 50px 0; margin-bottom: 50px; }
         .features { padding: 50px 0; margin-top: 2%; align-content: center; }
         .feature-icon { font-size: 3.5rem; margin-bottom: 20px; color: rgb(189, 214, 235); }
-        .writing-block { background: rgb(255, 255, 255);
-           height: 100%;
-            width: 60%;            
+        .writing-block, .writing-block1, .writing-block2 { 
+            background: rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;            
             margin: 10px auto;
-             border-radius: 10px;
-              padding: 20px;
-               text-align: center; 
-               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out; }
-        .writing-block1 { background: rgb(255, 255, 255); height: 100%; width: 60%; margin: 10px auto; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;margin-left: 40%; }
-        .writing-block2 { background: rgb(255, 255, 255); height: 100%; width: 60%; margin: 10px auto; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;margin-left: -3%; }
-        .writing-block:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
-        .writing-block1:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
-        .writing-block2:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease-in-out;
+        }
+        .writing-block:hover, .writing-block1:hover, .writing-block2:hover { 
+            transform: scale(1.05); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+        }
     </style>
 </head>
 <body>
@@ -47,37 +49,38 @@
     </nav>
     <section class="hero-section text-center">
         <div class="container">
-          <br>
+            <br>
             <h1>AMÉLIORER VOS COMPÉTENCES EN SAISIE</h1>
-  
             <p class="lead"><strong>Découvrez une nouvelle façon d'apprendre à saisir</strong></p>
             <button class="btn btn-dark" style="margin-top: 1%;">COMMENCER</button>
         </div>
-        <section class="features">
+    </section>
+    <section class="features">
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <section class="writing-block1">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="writing-block1">
                         <i class="fas fa-keyboard feature-icon"></i>
                         <h3>Rapide</h3>
                         <p>Notre site va vous permettre d'améliorer votre vitesse de saisie de manière exponentielle</p>
-                    </section>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <section class="writing-block">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="writing-block">
                         <i class="fas fa-graduation-cap feature-icon"></i>
                         <h3>Apprentissage</h3>
                         <p>Grâce à son interface ludique, l'apprentissage n'aura jamais été aussi amusant</p>
-                    </section>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <section class="writing-block2">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="writing-block2">
                         <i class="fas fa-sync feature-icon"></i>
                         <h3>Flexible</h3>
                         <p>Notre site s'adapte à vous et à vos besoins grâce aux nombreux outils mis à votre disposition</p>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

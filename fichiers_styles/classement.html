@@ -1,0 +1,164 @@
+<html><head><base href="." /><title>Classement des Joueurs - Vitesse de Frappe</title>
+    <style>
+      :root {
+        --primary: #2c3e50;
+        --secondary: #09568e68;
+        --bg: #ecf0f1;
+      }
+    
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: var(--primary);
+      }
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      h1 {
+        text-align: center;
+        color: var(--primary);
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    
+      .leaderboard {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        overflow: hidden;
+      }
+    
+      .header {
+        background: var(--secondary);
+        color: rgb(200, 226, 240);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        font-weight: bold;
+      }
+    
+      .player-row {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        transition: transform 0.2s ease;
+      }
+    
+      .player-row:hover {
+        background: #c3ecf9;
+        transform: scale(1.01);
+      }
+    
+      .rank {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+    
+      .medal {
+        width: 25px;
+        height: 25px;
+      }
+    
+      .search-box {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 12px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        font-size: 16px;
+      }
+    
+      .wpm {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    
+      .player-row {
+        animation: fadeIn 0.5s ease forwards;
+      }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+      <h1> Classement</h1>
+      
+      <input type="text" class="search-box" placeholder="Rechercher un joueur..." id="searchInput">
+    
+      <div class="leaderboard">
+        <div class="header" style="color: black;">
+          <div>Rang</div>
+          <div>Joueur</div>
+          <div>Vitesse</div>
+        </div>
+        <div id="playersList"></div>
+      </div>
+    </div>
+    
+    <script>
+    const players = [
+      { name: "Alex Martin", wpm: 85 },
+      { name: "Sophie Dubois", wpm: 120 },
+      { name: "Thomas Bernard", wpm: 95 },
+      { name: "Marie Lambert", wpm: 110 },
+      { name: "Lucas Petit", wpm: 75 },
+      { name: "Emma Roux", wpm: 105 },
+      { name: "Paul Durand", wpm: 92 },
+      { name: "Julie Lefebvre", wpm: 88 },
+      { name: "Hugo Moreau", wpm: 115 },
+      { name: "Léa Simon", wpm: 98 }
+    ];
+    
+    function renderPlayers(playersArray) {
+      const playersList = document.getElementById('playersList');
+      playersList.innerHTML = '';
+      
+      // Trier les joueurs par WPM décroissant
+      const sortedPlayers = [...playersArray].sort((a, b) => b.wpm - a.wpm);
+      
+      sortedPlayers.forEach((player, index) => {
+        const row = document.createElement('div');
+        row.className = 'player-row';
+        
+        let medalSvg = '';
+        if (index === 0) {
+          medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">1</text></svg>`;
+        } else if (index === 1) {
+          medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">2</text></svg>`;
+        } else if (index === 2) {
+          medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">3</text></svg>`;
+        }
+        
+        row.innerHTML = `
+          <div class="rank">${medalSvg || (index + 1)}</div>
+          <div>${player.name}</div>
+          <div class="wpm">${player.wpm} MPM</div>
+        `;
+        
+        playersList.appendChild(row);
+      });
+    }
+    
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      const filteredPlayers = players.filter(player => 
+        player.name.toLowerCase().includes(searchTerm)
+      );
+      renderPlayers(filteredPlayers);
+    });
+    
+    // Affichage initial
+    renderPlayers(players);
+    </script>
+    </body></html>
