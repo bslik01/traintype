@@ -1,9 +1,12 @@
 const container = document.querySelector(".cont");
 const globe = document.querySelector(".globe");
-const linkItems = document.querySelectorAll(".link-item");
+const linkItems = document.querySelectorAll(".l-item");
 const darkMode = document.querySelector(".dark-mode");
-const logo = document.querySelector(".cont .logo");
-const logo_span = document.querySelector(".cont .logo span");
+const logo = document.querySelector(".cont .log_title");
+const logo_span = document.querySelector(".cont .log_title span");
+const icon_fill_gp = document.querySelectorAll('[class*="fill"]');
+const icon_fill = document.querySelector('[class*="fill"]');
+
 // const logo_sp2 = document.querySelector(".logo .sp2");
 
 //Container Hover - Leave
@@ -35,8 +38,12 @@ for (let i = 0; i < linkItems.length; i++) {
     linkItems[i].addEventListener("click", (e) => {
       linkItems.forEach((linkItem) => {
         linkItem.classList.remove("active");
+        // linkItem.querySelector('i').style.display = 'none';
+        // linkItem.querySelector('[class*="fill"]').style.display = 'block';
       });
       linkItems[i].classList.add("active");
+      // linkItem.querySelector('[class*="fill"]').style.display = 'none';
+      // linkItem.querySelector('i').style.display = 'block';
     });
   }
 }
