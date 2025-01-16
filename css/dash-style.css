@@ -10,13 +10,13 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-/* @font-face {
-  font-family: "WorkSans";
-  src: url(../assets/fonts/WorkSans-Regular.ttf) format('ttf');
+@font-face {
+  font-family: "Jersey";
+  src: url(../assets/fonts/Jersey15-Regular.ttf) format('ttf');
 
-  font-family: "WorkSana SemiBold";
+  font-family: "WorkS";
   src: url(../assets/fonts/WorkSans-SemiBold.ttf) format('ttf');
-} */
+}
 
 .log_title p {
   animation: spin 3s linear infinite; /* Durée: 2s, répétition infinie */
@@ -26,7 +26,8 @@
   --primry-clr: rgb(255, 167, 44);
   --hover-clr: rgb(252, 238, 219);
   --bg-clr: #fff;
-  --white-bg: #bbbbbb;
+  /* --white-bg: #dbdbdb; */
+  --white-bg: #fff;
   --dark-text-clr: #363b46;
   --dark-p-clr: #363b46;
   --light-text-clr: #fff;
@@ -49,10 +50,13 @@ body.dark-mode {
 }
 body {
   min-height: 100vh;
-  background: var(--white-bg);
+  /* background: var(--li-bg); */
   display: flex;
   align-items: center;
 }
+
+.d-page {color: var(--dark-text-clr);}
+/* h4 {font-family: 'Perso';} */
 
 @media (min-width:420px) {
 .cont-mini, .b-menu {display: none;}
@@ -60,6 +64,8 @@ body {
 .globe {
   width: calc(100vw - 85px - 10px);
   height: calc(100vh - 20px);
+  /* width: calc(100vw - 85px);
+  height: calc(100vh); */
   margin: 0 5px;
   margin-left: 0;
   background: var(--white-bg);
@@ -68,10 +74,12 @@ body {
 }
 .globe.active {
   width: calc(100vw - 250px - 10px);
+  /* width: calc(100vw - 250px); */
 }
 
 .cont {
   /* font-family: 'WorkSans SemiBold'; */
+  /* background-color: var(--white-bg); */
   width: 85px;
   height: 100vh;
   margin: 0;
@@ -139,8 +147,8 @@ body {
 }
 .cont .haut .log_title {
   transition: 1s ease;
-  background-color: var(--bg-log_title);
-  color: var(--da);
+  /* background-color: var(--bg-log_title); */
+  /* color: var(--dark-text-clr); */
   border: 1px solid transparent;
   border-radius: 50px;
   font-size: 50px;
@@ -374,4 +382,17 @@ body {
       color: var(--dark-text-clr);
     }
   }
+}
+
+.men {
+  display: none;
+}
+
+.men.active {
+  display: block;
+}
+
+.d-button {
+  background-color: var(--dark-text-clr);
+  color: var(--dark-p-clr);
 }

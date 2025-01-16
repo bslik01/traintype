@@ -1,6 +1,7 @@
 const container = document.querySelector(".cont");
 const globe = document.querySelector(".globe");
 const linkItems = document.querySelectorAll(".l-item");
+const contItems = document.querySelectorAll(".men");
 const darkMode = document.querySelector(".dark-mode");
 const logo = document.querySelector(".cont .log_title");
 const logo_span = document.querySelector(".cont .log_title span");
@@ -33,17 +34,18 @@ logo.addEventListener("click", () => {
 // });
 
 //Link-items Clicked
-for (let i = 0; i < linkItems.length; i++) {
+for (let i = 0; i < linkItems.length-1; i++) {
   if (!linkItems[i].classList.contains("dark-mode")) {
     linkItems[i].addEventListener("click", (e) => {
       linkItems.forEach((linkItem) => {
         linkItem.classList.remove("active");
-        // linkItem.querySelector('i').style.display = 'none';
-        // linkItem.querySelector('[class*="fill"]').style.display = 'block';
       });
+      contItems.forEach((c) => {
+        c.classList.remove("active");
+      })
+      // console.log(contItems[1])
       linkItems[i].classList.add("active");
-      // linkItem.querySelector('[class*="fill"]').style.display = 'none';
-      // linkItem.querySelector('i').style.display = 'block';
+      contItems[i].classList.add("active");
     });
   }
 }
