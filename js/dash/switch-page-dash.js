@@ -8,6 +8,6 @@ function menu_d() {
 
 document.addEventListener('DOMContentLoaded', function() {
     menu_d();
-    $('head').append('<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css" />');
+    $('head').append('<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css" type="text/css" />');
 });
 
