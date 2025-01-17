@@ -1,77 +1,54 @@
-const gameHistory = [
-      { date: '2024-01-01', wpm: 65 },
-      { date: '2024-01-02', wpm: 68 },
-      { date: '2024-01-03', wpm: 72 },
-      { date: '2024-01-04', wpm: 70 },
-      { date: '2024-01-05', wpm: 75 },
-      { date: '2024-01-06', wpm: 73 },
-      { date: '2024-01-07', wpm: 78 },
-      { date: '2024-01-08', wpm: 82 },
-      { date: '2024-01-09', wpm: 80 },
-      { date: '2024-01-10', wpm: 85 }
-    ];
+const players = [
+  { name: "Alex Martin", wpm: 85 },
+  { name: "Sophie Dubois", wpm: 120 },
+  { name: "Thomas Bernard", wpm: 95 },
+  { name: "Marie Lambert", wpm: 110 },
+  { name: "Lucas Petit", wpm: 75 },
+  { name: "Emma Roux", wpm: 105 },
+  { name: "Paul Durand", wpm: 92 },
+  { name: "Julie Lefebvre", wpm: 88 },
+  { name: "Hugo Moreau", wpm: 115 },
+  { name: "Léa Simon", wpm: 98 }
+];
+
+function renderPlayers(playersArray) {
+  const playersList = document.querySelector('#playersList');
+  //playersList.innerHTML = '';
+  
+  // Trier les joueurs par WPM décroissant
+  const sortedPlayers = [...playersArray].sort((a, b) => b.wpm - a.wpm);
+  
+  sortedPlayers.forEach((player, index) => {
+    const row = document.createElement('div');
+    row.className = 'player-row';
     
-function updateStats() {
-  const wpmValues = gameHistory.map(game => game.wpm);
-  const averageWpm = Math.round(wpmValues.reduce((a, b) => a + b) / wpmValues.length);
-  const bestWpm = Math.max(...wpmValues);
-  const firstWpm = wpmValues[0];
-  const lastWpm = wpmValues[wpmValues.length - 1];
-  const progressionPercentage = Math.round(((lastWpm - firstWpm) / firstWpm) * 100);
-    
-  document.getElementById('averageWpm').textContent = averageWpm;
-  document.getElementById('bestWpm').textContent = bestWpm;
-  document.getElementById('totalGames').textContent = gameHistory.length;
-  document.getElementById('progression').textContent = `+${progressionPercentage}%`;
-}
-    
-function createChart() {
-  const ctx = document.querySelector('#progressChart').getContext('2d');
-      
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: gameHistory.map(game => game.date),
-      datasets: [{
-        label: 'Mots par Minute',
-        data: gameHistory.map(game => game.wpm),
-        borderColor: '#3498db',
-        backgroundColor: 'rgba(52, 152, 219, 0.1)',
-        fill: true,
-        tension: 0.4,
-        pointRadius: 6,
-        pointHoverRadius: 8
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        title: {
-          display: true,
-          text: 'Évolution de la Vitesse de Frappe'
-        }
-      },
-      scales: {
-        y: {
-          beginAtZero: false,
-          title: {
-            display: true,
-            text: 'Mots par Minute (MPM)'
-          }
-        },
-        x: {
-          title: {
-            display: true,
-            text: 'Date'
-          }
-        }
-      }
+    let medalSvg = '';
+    if (index === 0) {
+      medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#FFD700"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">1</text></svg>`;
+    } else if (index === 1) {
+      medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#C0C0C0"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">2</text></svg>`;
+    } else if (index === 2) {
+      medalSvg = `<svg class="medal" viewBox="0 0 24 24" fill="#CD7F32"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">3</text></svg>`;
     }
+    
+    row.innerHTML = `
+      <div class="rank">${medalSvg || (index + 1)}</div>
+      <div>${player.name}</div>
+      <div class="wpm">${player.wpm} MPM</div>
+    `;
+    
+    if (playersList) { playersList.appendChild(row); } else { console.error('Parent element not found'); }
+    //playersList.appendChild(row);
   });
 }
-     // Initialisation
-updateStats();
-createChart();
+
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  const filteredPlayers = players.filter(player => 
+    player.name.toLowerCase().includes(searchTerm)
+  );
+  renderPlayers(filteredPlayers);
+});
+
+// Affichage initial
+renderPlayers(players);

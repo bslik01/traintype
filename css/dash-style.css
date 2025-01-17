@@ -160,6 +160,7 @@ body {
     font-size: 25px;
     margin-left: -.4rem;
     transition: transform 0.5s;
+    z-index: 1;
   }
   .sp2 {
     transition: .5s ease;

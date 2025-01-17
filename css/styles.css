@@ -21,6 +21,7 @@
 body {
     background-color: #f8f9fa;
     max-height: 100vh;
+    max-width: 100vh;
 }
 
 .all {

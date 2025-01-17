@@ -1,71 +1,71 @@
 :root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
-    --bg: #ecf0f1;
-  }
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --bg: #ecf0f1;
+}
+/* 
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: var(--bg);
+  color: var(--primary);
+}
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background: var(--bg);
-    color: var(--primary);
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+h1 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  h1 {
-    text-align: center;
-    color: var(--primary);
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+.stats-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 
-  .stats-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
+.stat-item {
+  text-align: center;
+}
 
-  .stat-item {
-    text-align: center;
-  }
+.stat-value {
+  font-size: 2em;
+  color: var(--secondary);
+  font-weight: bold;
+}
 
-  .stat-value {
-    font-size: 2em;
-    color: var(--secondary);
-    font-weight: bold;
-  }
+.stat-label {
+  color: var(--primary);
+  font-size: 0.9em;
+  margin-top: 5px;
+}
 
-  .stat-label {
-    color: var(--primary);
-    font-size: 0.9em;
-    margin-top: 5px;
-  }
+.chart-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
 
-  .chart-container {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-top: 20px;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .stats-card, .chart-container {
-    animation: fadeIn 0.5s ease forwards;
-  }
+.stats-card, .chart-container {
+  animation: fadeIn 0.5s ease forwards;
+}

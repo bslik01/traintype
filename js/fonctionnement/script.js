@@ -88,8 +88,8 @@ const handleLogin = async (event) => {
 const loadDashboard = async () => {
     const user = JSON.parse(localStorage.getItem("loggedInUser"));
     let p = concatenateFirstLetterUppercase(user.prenom, user.nom);
-    console.log(document.getElementById("p-logo"));
-    console.log(document.getElementById("p-nom"));
+    // console.log(document.getElementById("p-logo"));
+    // console.log(document.getElementById("p-nom"));
     document.getElementById("p-logo").innerHTML = `${p}`;
     document.getElementById("p-nom").innerHTML = `
     ${user.prenom} ${user.nom}
