@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainType</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="loginCard" id="auth-form">
+    <h3 class="text-center mb-4">Connexion</h3><!-- 𝕃𝕠𝕘 𝕚𝕟 -->
+    <form id="loginForm">
+        <div class="mb-3">
+          <label for="emailLogin" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailLogin"  required>
+        </div>
+
+        <div class="mb-3">
+          <label for="passwordLogin" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="passwordLogin" required>
+          <a class="forget" href="#">Forget?</a>
+        </div>
+        <button type="submit" class="btn btn-dark w-100 mb-3">Connexion</button> 
+    </form>
+    <a class="btn btn-light w-100 mb-3" href="#" id="showSignUp">S'inscrire</a>
+  </div>
+  
+  <div class="signUpCard" id="auth-form" style="display: none;">
+      <h3 class="text-center">Inscription</h3>
+      <form id="signUpForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="username"  required>
+        </div>
+        <div class="mb-3">
+          <label for="firstname" class="form-label">Prenom</label>
+          <input type="text" class="form-control" id="firstname"  required>
+        </div>
+        <div class="mb-3">
+          <label for="emailSignUp" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailSignUp" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <label for="passwordSignUp" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="passwordSignUp" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-dark w-100 mb-3">Sign Up</button>
+        
+      </form>
+      <a class="btn btn-light w-100 mb-3" href="#" id="showLogin">Déjà un compte?</a>
+    </div>
+     
+  
+    
+    <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     await openDB();
 
     // Vérifier si l'utilisateur est connecté
-    if (isUserLoggedIn()) {
+    if (localStorage.getItem('loggedInUser')) {
+        // isUserLoggedIn()
         loadDashboard();
     } else {
         loadLoginPage();
@@ -14,23 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
  * Charger la page de connexion
  */
 const loadLoginPage = () => {
-    document.getElementById("app").innerHTML = `
-        <h2>Connexion</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Nom d'utilisateur" required />
-            <input type="password" id="password" placeholder="Mot de passe" required />
-            <button type="submit">Se connecter</button>
-        </form>
-        <h3>Inscription</h3>
-        <form id="registerForm">
-            <input type="text" id="registerUsername" placeholder="Nom d'utilisateur" required />
-            <input type="password" id="registerPassword" placeholder="Mot de passe" required />
-            <button type="submit">S'inscrire</button>
-        </form>
-    `;
-
     document.getElementById("loginForm").addEventListener("submit", handleLogin);
-    document.getElementById("registerForm").addEventListener("submit", handleRegister);
+    document.getElementById("signUpForm").addEventListener("submit", handleRegister);
 };
 
 /**
@@ -39,19 +25,35 @@ const loadLoginPage = () => {
 const handleRegister = async (event) => {
     event.preventDefault();
 
-    const username = document.getElementById("registerUsername").value;
-    const password = document.getElementById("registerPassword").value;
+    const nom = document.getElementById("registerNom").value;
+    const prenom = document.getElementById("registerPrenom").value;
+    const email = document.getElementById("registerEmail").value;
+    const password = document.getElementById("registerPass").value;
+    const hashedPassword = hashPassword(password);
+    const statut = 'user';
 
     const users = await getAllFromDB("users");
-    const userExists = users.some((u) => u.username === username);
+    const userExists = users.some((u) => u.email === email);
 
     if (userExists) {
         alert("Nom d'utilisateur déjà utilisé.");
         return;
     }
 
-    await addToDB("users", { username, password, created_at: getCurrentTimestamp() });
+    const newUser = {
+        email,
+        nom,
+        prenom,
+        password: hashedPassword,
+        statut,
+        createdAt: new Date().toISOString()
+    };
+
+    await addToDB("users", newUser);
     alert("Inscription réussie. Vous pouvez maintenant vous connecter.");
+    // Recharge la page actuelle
+    location.reload();
+
 };
 
 /**
@@ -60,17 +62,23 @@ const handleRegister = async (event) => {
 const handleLogin = async (event) => {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("emailLogin").value;
+    const password = document.getElementById("passwordLogin").value;
 
     const users = await getAllFromDB("users");
-    const user = users.find((u) => u.username === username && u.password === password);
+    const user = users.find((u) => u.email === email && u.password === hashPassword(password));
 
     if (user) {
-        localStorage.setItem("loggedInUser", JSON.stringify(user));
-        loadDashboard();
+        alert(`Bienvenue, ${user.prenom} ${user.nom}!`);
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
+        // Redirect to the dashboard
+        if (user.statut === 'user')
+            location.href = "pages/user/dashboard.html";
+        else
+            location.href = "pages/admin/admin.html";
+
     } else {
-        alert("Nom d'utilisateur ou mot de passe incorrect.");
+        alert("Email ou mot de passe incorrect.");
     }
 };
 
@@ -79,15 +87,19 @@ const handleLogin = async (event) => {
  */
 const loadDashboard = async () => {
     const user = JSON.parse(localStorage.getItem("loggedInUser"));
-
-    document.getElementById("app").innerHTML = `
-        <h2>Bienvenue, ${user.username}</h2>
-        <button id="logout">Se déconnecter</button>
-        <h3>Exercices disponibles</h3>
-        <div id="exerciseList"></div>
-        <h3>Historique des performances</h3>
-        <div id="performanceHistory"></div>
+    let p = concatenateFirstLetterUppercase(user.prenom, user.nom);
+    console.log(document.getElementById("p-logo"));
+    console.log(document.getElementById("p-nom"));
+    document.getElementById("p-logo").innerHTML = `${p}`;
+    document.getElementById("p-nom").innerHTML = `
+    ${user.prenom} ${user.nom}
     `;
+        // <h2>Bienvenue, ${user.username}</h2>
+        // <button id="logout">Se déconnecter</button>
+        // <h3>Exercices disponibles</h3>
+        // <div id="exerciseList"></div>
+        // <h3>Historique des performances</h3>
+        // <div id="performanceHistory"></div>
 
     document.getElementById("logout").addEventListener("click", handleLogout);
 
@@ -357,3 +369,12 @@ const loadLeaderboard = async () => {
 
     document.getElementById("app").appendChild(container);
 };
+
+// Utility function to hash passwords
+function hashPassword(password) {
+    return btoa(password).split('').reverse().join(''); // Simple reversible encoding, replace with secure hashing in real-world projects
+}
+
+function concatenateFirstLetterUppercase(str1, str2) {
+    return str1.charAt(0).toUpperCase() + str2.charAt(0).toUpperCase();
+}

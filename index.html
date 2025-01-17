@@ -11,56 +11,63 @@
         <div class="elt">
             <div class="">
                 <div class="loginCard">
-                    <h3 class="">Login</h3><!-- 𝕃𝕠𝕘 𝕚𝕟 -->
+                    <h3 class="">Connexion</h3><!-- 𝕃𝕠𝕘 𝕚𝕟 -->
                     <form id="loginForm">
                         <div class="form-group">
                             <!-- <label for="emailLogin">Email</label> -->
-                            <input type="email" class="zone_t" id="emailLogin" placeholder="Email or username" required>
-                            <div class="erase">x</div>
+                            <input type="email" class="zone_t" id="emailLogin" placeholder="Email" required>
+                            <!-- <div class="erase">x</div> -->
                         </div>
                         <div class="form-group">
                             <!-- <label for="passwordLogin">Mot de passe</label> -->
-                            <input type="password" class="zone_t" id="passwordLogin" placeholder="Password" required>
-                            <a class="forget" href="#">Forget?</a>
+                            <input type="password" class="zone_t" id="passwordLogin" placeholder="Mot de passe" required>
+                            <!-- <a class="forget" href="#">Oublier?</a> -->
                         </div>
-                        <button type="submit" class="btn_s">Log in</button>
+                        <button type="submit" class="btn_s">Se Connecter</button>
                     </form>
                     <div class="msg">
-                        <span>No account ? <a href="#" id="showSignUp">Sign Up</a></span>
+                        <span>Pas de compte? <a href="#" id="showSignUp">S'inscrire</a></span>
                     </div>
                 </div>
                 <div class="signUpCard" style="display: none;">
-                    <h3 class="text-center">Sign Up</h3>
+                    <h3 class="text-center">Inscription</h3>
                     <form id="signUpForm">
                         <div class="form-group">
                             <!-- <label for="username"></label> -->
-                            <input type="text" class="zone_t" id="username" placeholder="Username" required>
+                            <input type="text" class="zone_t" id="registerNom" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="username"></label> -->
+                            <input type="text" class="zone_t" id="registerPrenom" placeholder="Prenom" required>
                         </div>
                         <div class="form-group">
                             <!-- <label for="emailSignUp">Email</label> -->
-                            <input type="email" class="zone_t" id="emailSignUp" placeholder="Email" required>
+                            <input type="email" class="zone_t" id="registerEmail" placeholder="Email" required>
                         </div>
                         <div class="form-group">
                             <!-- <label for="passwordSignUp">Mot de passe</label> -->
-                            <input type="password" class="zone_t" id="passwordSignUp" placeholder="Password" required>
+                            <input type="password" class="zone_t" id="registerPass" placeholder="Mot de passe" required>
                         </div>
-                        <button type="submit" class="btn_su">Sign Up</button>
+                        <button type="submit" class="btn_su">S'incrire</button>
                     </form>
                     <div class="msg">
-                        <span>Already have an account ? <a href="#" id="showLogin">Login</a></span>
+                        <span>Deja inscrit ? <a href="#" id="showLogin">Se Connecter</a></span>
                     </div>
                 </div>
 
                 <div class="bande"></div>
 
                 <div class="terms">
-                    By signing in to <b>TrainType</b>, you agree to our <b>Terms</b> and <b>Privacy <br>Policy</b>.
+                    En vous connectant à <b>TrainType</b>, vous acceptez<br> nos  <b>Conditions</b> et notre <b>Politique de confidentialité</b>.
                 </div>
             </div>
         </div>
     </div>
     
     <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/fonctionnement/db.js"></script>
+    <script src="js/fonctionnement/utils.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/fonctionnement/script.js"></script>
 </body>
 </html>

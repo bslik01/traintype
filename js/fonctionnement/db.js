@@ -1,5 +1,5 @@
 // Nom et version de la base de données
-const DB_NAME = "TrainTypeDB";
+const DB_NAME = "TT_db";
 const DB_VERSION = 1;
 let db; // Variable pour la base de données
 
@@ -15,10 +15,10 @@ const openDB = () => {
 
             // Création des collections si elles n'existent pas
             if (!db.objectStoreNames.contains("users")) {
-                db.createObjectStore("users", { keyPath: "id", autoIncrement: true });
+                db.createObjectStore("users", { keyPath: "email"});
             }
             if (!db.objectStoreNames.contains("exercises")) {
-                db.createObjectStore("exercises", { keyPath: "id", autoIncrement: true });
+                db.createObjectStore("exercises", { keyPath: "id"});
             }
             if (!db.objectStoreNames.contains("performance")) {
                 db.createObjectStore("performance", { keyPath: "id", autoIncrement: true });
