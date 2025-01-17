@@ -398,3 +398,13 @@ body {
   background-color: var(--dark-text-clr);
   color: var(--dark-p-clr);
 }
+
+.do-ex {
+    background-color: var(--white-bg);
+}
+
+.ComingS {
+  font-size: 6rem;
+  text-align: center;
+  transform: rotate(-12deg) translateY(6rem) translateX(-2rem);
+}

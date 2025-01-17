@@ -91,6 +91,9 @@ const loadDashboard = async () => {
     // console.log(document.getElementById("p-logo"));
     // console.log(document.getElementById("p-nom"));
     document.getElementById("p-logo").innerHTML = `${p}`;
+    wel = document.querySelector("#contenu1 h1");
+    wel.innerHTML = `Welcome, ${user.prenom}!!`;
+    wel.
     document.getElementById("p-nom").innerHTML = `
     ${user.prenom} ${user.nom}
     `;
