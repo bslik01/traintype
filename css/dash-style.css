@@ -64,6 +64,7 @@ body {
 .globe {
   width: calc(100vw - 85px - 10px);
   height: calc(100vh - 20px);
+  overflow-y: auto;
   /* width: calc(100vw - 85px);
   height: calc(100vh); */
   margin: 0 5px;

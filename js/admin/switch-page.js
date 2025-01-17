@@ -1,5 +1,5 @@
 
-function menu_d() {
+function menu_admin() {
     $("#contenu2").load("../pages/add-exercice.html");
     $("#contenu3").load("../pages/add-person.html");
     $("#contenu4").load("../pages/list-exo.html");
@@ -7,8 +7,7 @@ function menu_d() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    menu_d();
+    menu_admin();
     $('head').append('<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css" />');
-    // $('body').append('<script type="text/javascript" src="../js/script_liste.js"></script>');
 });
 

@@ -1,6 +1,8 @@
 
 //fonction qui permet de charger le fichier
-const liste=document.getElementById('listeExercices');
+const liste = document.querySelector('#contenu4');
+const listeE = document.querySelector('#listExercises');
+console.log(listeE);
 
 
 function loadfromFile(){
@@ -12,6 +14,7 @@ function loadfromFile(){
         })
 
         .done(function(res){
+            // console.log(res);
             res.forEach(niv =>{
                 const text=niv.exo;
                 const niveauText=niv.niveau;
@@ -29,11 +32,9 @@ function loadfromFile(){
                     divliste.appendChild(listecontent);
                     divliste.appendChild(niveau);
                     divliste.className="rounded border p-4 mb-3";
-                    liste.appendChild(divliste);
-                    
+                    if (liste) { liste.appendChild(divliste); } else { console.error('Parent element not found'); }
                 });
             });
-            
         });
     })
 }
