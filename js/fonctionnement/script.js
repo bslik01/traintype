@@ -73,9 +73,9 @@ const handleLogin = async (event) => {
         localStorage.setItem('loggedInUser', JSON.stringify(user));
         // Redirect to the dashboard
         if (user.statut === 'user')
-            location.href = "pages/user/dashboard.html";
+            location.href = "../pages/user/dashboard.html";
         else
-            location.href = "pages/admin/admin.html";
+            location.href = "../pages/admin/admin.html";
 
     } else {
         alert("Email ou mot de passe incorrect.");
