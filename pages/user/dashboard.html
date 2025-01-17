@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../css/dash-style.css">
     <link rel="stylesheet" href="../../css/classement.css">
     <link rel="stylesheet" href="../../css/stat.css">
+    <link rel="stylesheet" href="../../css/profile-user.css">
     <link rel="stylesheet" href="../../vendor/bootstrap/icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
 </head>
@@ -84,7 +85,7 @@
       </li>
     </ul>
 
-    <div class="l-item last_gp">
+    <div class="l-item last_gp" id="openModal">
       <a href="#" class="lk dropend">
         <p id="p-logo" class="img">BJ</p>
         <span>
@@ -92,6 +93,37 @@
           <p>User</p>
         </span>
       </a>
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Mon Profil</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username" class="form-label">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enregistrer les modifications</button>
+                        <button type="button" class="btn btn-light" onclick="logout()">Se déconnecter</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+                
+      </div>       
     </div>
   </div>
   <!-- <div class="cont-mini">
@@ -155,6 +187,8 @@
   <script src="../../js/script_dash.js"></script>
   <script src="../../js/dash/classement.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../../js/dash/profile-user.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="../../js/dash/stat.js"></script>
   <script src="../../js/dash/switch-page-dash.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
