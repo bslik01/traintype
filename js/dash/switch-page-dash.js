@@ -1,13 +1,13 @@
 
-function menu_admin() {
+function menu_d() {
     $("#contenu2").load("../pages/add-exercice.html");
     $("#contenu3").load("../pages/add-person.html");
-    $("#contenu4").load("../pages/list-exo.html");
-    $("#contenu5").load("../pages/list-person.html");
+    $("#contenu4").load("../../pages/user/classement.html");
+    $("#contenu5").load("../../pages/user/statistiques.html");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    menu_admin();
-    $('head').append('<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css" />');
+    menu_d();
+    $('head').append('<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css" type="text/css" />');
 });
 

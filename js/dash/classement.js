@@ -12,8 +12,8 @@
     ];
     
     function renderPlayers(playersArray) {
-      const playersList = document.getElementById('playersList');
-      playersList.innerHTML = '';
+      const playersList = document.querySelector('#playersList');
+      //playersList.innerHTML = '';
       
       // Trier les joueurs par WPM décroissant
       const sortedPlayers = [...playersArray].sort((a, b) => b.wpm - a.wpm);
@@ -37,7 +37,8 @@
           <div class="wpm">${player.wpm} MPM</div>
         `;
         
-        playersList.appendChild(row);
+        if (playersList) { playersList.appendChild(row); } else { console.error('Parent element not found'); }
+        //playersList.appendChild(row);
       });
     }
     

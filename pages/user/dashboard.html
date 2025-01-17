@@ -4,8 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../css/dash-style.css">
+    <link rel="stylesheet" href="../../css/classement.css">
+    <link rel="stylesheet" href="../../css/stat.css">
     <link rel="stylesheet" href="../../vendor/bootstrap/icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    
 </head>
 <body>
   <div class="cont">
@@ -108,8 +111,45 @@
     <div id="contenu1" class="men active"></div>
     <div id="contenu2" class="men p-5"></div>
     <div id="contenu3" class="men p-5"></div>
-    <div id="contenu4" class="men p-5"></div>
-    <div id="contenu5" class="men p-5"></div>
+    <div id="contenu4" class="men p-5">
+        <h1> Classement</h1>
+        
+        <input type="text" class="search-box" placeholder="Rechercher un joueur..." id="searchInput">
+      
+        <div class="leaderboard">
+          <div class="header" style="color: black;">
+            <div>Rang</div>
+            <div>Joueur</div>
+            <div>Vitesse</div>
+          </div>
+        </div>
+        <div id="playersList"></div>
+    </div>
+    <div id="contenu5" class="men p-5">
+      <h1>Progression du Joueur</h1>
+    
+      <div class="stats-card">
+        <div class="stat-item">
+          <div class="stat-value" id="averageWpm">0</div>
+          <div class="stat-label">Moyenne MPM</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="bestWpm">0</div>
+          <div class="stat-label">Record MPM</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="totalGames">0</div>
+          <div class="stat-label">Parties Jouées</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="progression">0%</div>
+          <div class="stat-label">Progression</div>
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas id="progressChart"></canvas>
+      </div>
+    </div>
   </div>
   
   <!-- <div class="b-menu">
@@ -163,6 +203,10 @@
   
   <script src="../../vendor/jquery/jquery-3.7.1.min.js"></script>
   <script src="../../js/script_dash.js"></script>
+  <script src="../../js/dash/classement.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../../js/dash/stat.js"></script>
+  <script src="../../js/dash/switch-page-dash.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../js/fonctionnement/db.js"></script>
   <script src="../../js/fonctionnement/utils.js"></script>

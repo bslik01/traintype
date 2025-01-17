@@ -8,7 +8,7 @@ console.log(listeE);
 function loadfromFile(){
     $(document).ready(function(){
         $.ajax({
-            url:"../data/exercice.json",
+            url:"../../data/exercice.json",
             method:"GET",
             dataType:"json",
         })
