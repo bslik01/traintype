@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainType</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Train Type</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/accueil.css">
 </head>
 <body>
-    <div class="all">
-        <div class="elt">
-            <div class="">
-                <div class="loginCard">
-                    <h3 class="">Connexion</h3><!-- 𝕃𝕠𝕘 𝕚𝕟 -->
-                    <form id="loginForm">
-                        <div class="form-group">
-                            <!-- <label for="emailLogin">Email</label> -->
-                            <input type="email" class="zone_t" id="emailLogin" placeholder="Email" required>
-                            <!-- <div class="erase">x</div> -->
-                        </div>
-                        <div class="form-group">
-                            <!-- <label for="passwordLogin">Mot de passe</label> -->
-                            <input type="password" class="zone_t" id="passwordLogin" placeholder="Mot de passe" required>
-                            <!-- <a class="forget" href="#">Oublier?</a> -->
-                        </div>
-                        <button type="submit" class="btn_s">Se Connecter</button>
-                    </form>
-                    <div class="msg">
-                        <span>Pas de compte? <a href="#" id="showSignUp">S'inscrire</a></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container" style="display: flex; justify-content:space-between;">
+            <a href="#" style="color: black; font-size:xx-large; text-decoration:none;"><b>TrainType</b></a>
+            <div style="display: flex; justify-content:space-between; width: 220px;">
+                <a href="pages/login.html" class="btn btn-dark">Connexion</a>
+                <a href="pages/login.html" class="btn btn-light">Inscription</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>AMÉLIORER VOS COMPÉTENCES EN SAISIE</h1>
+            <p class="lead"><strong>Découvrez une nouvelle façon d'apprendre à saisir</strong></p>
+            <button class="btn btn-dark mt-3" onclick="log()">COMMENCER</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Feature 1 -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-keyboard feature-icon"></i>
+                        <h3>Rapide</h3>
+                        <p>Notre site va vous permettre d'améliorer votre vitesse de saisie de manière exponentielle.</p>
                     </div>
                 </div>
-                <div class="signUpCard" style="display: none;">
-                    <h3 class="text-center">Inscription</h3>
-                    <form id="signUpForm">
-                        <div class="form-group">
-                            <!-- <label for="username"></label> -->
-                            <input type="text" class="zone_t" id="registerNom" placeholder="Nom" required>
-                        </div>
-                        <div class="form-group">
-                            <!-- <label for="username"></label> -->
-                            <input type="text" class="zone_t" id="registerPrenom" placeholder="Prenom" required>
-                        </div>
-                        <div class="form-group">
-                            <!-- <label for="emailSignUp">Email</label> -->
-                            <input type="email" class="zone_t" id="registerEmail" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <!-- <label for="passwordSignUp">Mot de passe</label> -->
-                            <input type="password" class="zone_t" id="registerPass" placeholder="Mot de passe" required>
-                        </div>
-                        <button type="submit" class="btn_su">S'incrire</button>
-                    </form>
-                    <div class="msg">
-                        <span>Deja inscrit ? <a href="#" id="showLogin">Se Connecter</a></span>
+                <!-- Feature 2 -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-graduation-cap feature-icon"></i>
+                        <h3>Apprentissage</h3>
+                        <p>Grâce à son interface ludique, l'apprentissage n'aura jamais été aussi amusant.</p>
                     </div>
                 </div>
-
-                <div class="bande"></div>
-
-                <div class="terms">
-                    En vous connectant à <b>TrainType</b>, vous acceptez<br> nos  <b>Conditions</b> et notre <b>Politique de confidentialité</b>.
+                <!-- Feature 3 -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-sync feature-icon"></i>
+                        <h3>Flexible</h3>
+                        <p>Notre site s'adapte à vous et à vos besoins grâce aux nombreux outils mis à votre disposition.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <script src="vendor/jquery/jquery-3.7.1.min.js"></script>
-    <script src="js/fonctionnement/db.js"></script>
-    <script src="js/fonctionnement/utils.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/fonctionnement/script.js"></script>
+    </section>
+
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function log() {
+            location.href = "pages/login.html";
+        }
+    </script>
 </body>
 </html>
